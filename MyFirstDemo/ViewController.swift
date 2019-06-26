@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import SnapKit
+import SDWebImage
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
