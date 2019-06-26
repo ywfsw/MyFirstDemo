@@ -12,11 +12,14 @@ import SDWebImage
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        let QAQ = UILabel(frame: CGRect(x: 30,y: 80,width: 310,height: 60))
+        let QAQ = UILabel()
         QAQ.textColor = UIColor.red
         QAQ.font = UIFont.systemFont(ofSize: 15)
         QAQ.text = "QAQ"
         self.view.addSubview(QAQ)
+        QAQ.snp.makeConstraints { (maker) in
+            maker.centerX.centerY.equalToSuperview()
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
