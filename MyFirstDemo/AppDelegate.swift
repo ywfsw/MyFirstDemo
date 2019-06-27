@@ -15,7 +15,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let Home = HomeViewController()
+        // 未选中状态Tab图片
+        //Home.tabBarItem.image = UIImage(named: "tab1")?.withRenderingMode(.alwaysOriginal)
+        // 选中状态Tab图片
+        Home.tabBarItem.selectedImage = UIImage(named: "selectTab1")?.withRenderingMode(.alwaysOriginal)
+        // Tab的文本
+        Home.tabBarItem.title = "Home"
+        
+        
+        let Leads = LeadsViewController()
+        //Leads.tabBarItem.image = UIImage(named: "tab2")?.withRenderingMode(.alwaysOriginal)
+        Leads.tabBarItem.selectedImage = UIImage(named: "selectTab2")?.withRenderingMode(.alwaysOriginal)
+        Leads.tabBarItem.title = "Leads"
+        
+        let Oppo = OppoViewController()
+        //Oppo.tabBarItem.image = UIImage(named: "tab3")?.withRenderingMode(.alwaysOriginal)
+        Oppo.tabBarItem.selectedImage = UIImage(named: "selectTab3")?.withRenderingMode(.alwaysOriginal)
+        Oppo.tabBarItem.title = "Oppo"
+        
+        let List = ListViewController()
+        List.tabBarItem.image = UIImage(named: "tab4")?.withRenderingMode(.alwaysOriginal)
+        List.tabBarItem.selectedImage = UIImage(named: "selectTab4")?.withRenderingMode(.alwaysOriginal)
+        List.tabBarItem.title = "报表"
+        
+        
+        let tabBarController = UITabBarController()
+        //tabBarController.tabBar.tintColor = UIColor.init(colorLiteralRed: 9/255.0, green: 187/255.0, blue: 7/255.0, alpha: 1)
+        tabBarController.viewControllers = [Home,Leads,Oppo,List]
+        Home.title = "Home"
+        let HomeNavigationController = UINavigationController(rootViewController: Home)
+        Leads.title = "Leads"
+        let LeadsNavigationController = UINavigationController(rootViewController: Leads)
+        Oppo.title = "Oppo"
+        let OppoNavigaitonController = UINavigationController(rootViewController: Oppo)
+        List.title = "报表"
+        let ListNavigationController = UINavigationController(rootViewController: List)
+        
+        tabBarController.viewControllers = [HomeNavigationController,LeadsNavigationController,OppoNavigaitonController,ListNavigationController]
+        window?.rootViewController = tabBarController
+        UINavigationBar.appearance().barTintColor = UIColor(red: 77/255, green:77/225, blue: 179/255, alpha: 1)
         return true
     }
 
