@@ -41,8 +41,8 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
         //let dict = dataSource[indexPath.row] as Dictionary
 //        cell?.tableImageView.image = UIImage(named: dict["icon"]!)
-        cell?.tableLabel.text = dic["text"]
-        cell?.tableLabel2.text = dic.keys.first
+        cell?.tableLabel.text = dic.keys.first
+     // cell?.tableLabel2.text = dic.keys.first
         if dic.values.first == "select" {
             
             cell?.accessoryType = .checkmark
