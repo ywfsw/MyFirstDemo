@@ -12,6 +12,8 @@
 		F0630AF322C4620D00BF3E76 /* LeadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630AF222C4620D00BF3E76 /* LeadsViewController.swift */; };
 		F0630AF522C4621D00BF3E76 /* OppoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630AF422C4621D00BF3E76 /* OppoViewController.swift */; };
 		F0630AF722C4624B00BF3E76 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630AF622C4624B00BF3E76 /* ListViewController.swift */; };
+		F0630AFB22C4A38000BF3E76 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630AFA22C4A38000BF3E76 /* HomeTableViewCell.swift */; };
+		F0630AFD22C4AAAC00BF3E76 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630AFC22C4AAAC00BF3E76 /* Const.swift */; };
 		F0B178A522BCD18D00ADD54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B178A422BCD18D00ADD54F /* AppDelegate.swift */; };
 		F0B178A722BCD18D00ADD54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B178A622BCD18D00ADD54F /* ViewController.swift */; };
 		F0B178AA22BCD18D00ADD54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B178A822BCD18D00ADD54F /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		F0630AF222C4620D00BF3E76 /* LeadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsViewController.swift; sourceTree = "<group>"; };
 		F0630AF422C4621D00BF3E76 /* OppoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppoViewController.swift; sourceTree = "<group>"; };
 		F0630AF622C4624B00BF3E76 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F0630AFA22C4A38000BF3E76 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F0630AFC22C4AAAC00BF3E76 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F0B178A122BCD18D00ADD54F /* MyFirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B178A422BCD18D00ADD54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B178A622BCD18D00ADD54F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		F0B178A322BCD18D00ADD54F /* MyFirstDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F0630AFC22C4AAAC00BF3E76 /* Const.swift */,
 				F0B178A422BCD18D00ADD54F /* AppDelegate.swift */,
 				F0B178A622BCD18D00ADD54F /* ViewController.swift */,
 				F0B178A822BCD18D00ADD54F /* Main.storyboard */,
@@ -136,6 +141,7 @@
 				F0B178AD22BCD18F00ADD54F /* LaunchScreen.storyboard */,
 				F0B178B022BCD18F00ADD54F /* Info.plist */,
 				F0630AF022C461F100BF3E76 /* HomeViewController.swift */,
+				F0630AFA22C4A38000BF3E76 /* HomeTableViewCell.swift */,
 				F0630AF222C4620D00BF3E76 /* LeadsViewController.swift */,
 				F0630AF422C4621D00BF3E76 /* OppoViewController.swift */,
 				F0630AF622C4624B00BF3E76 /* ListViewController.swift */,
@@ -338,8 +344,10 @@
 			files = (
 				F0630AF522C4621D00BF3E76 /* OppoViewController.swift in Sources */,
 				F0630AF322C4620D00BF3E76 /* LeadsViewController.swift in Sources */,
+				F0630AFB22C4A38000BF3E76 /* HomeTableViewCell.swift in Sources */,
 				F0630AF722C4624B00BF3E76 /* ListViewController.swift in Sources */,
 				F0B178A722BCD18D00ADD54F /* ViewController.swift in Sources */,
+				F0630AFD22C4AAAC00BF3E76 /* Const.swift in Sources */,
 				F0B178A522BCD18D00ADD54F /* AppDelegate.swift in Sources */,
 				F0630AF122C461F100BF3E76 /* HomeViewController.swift in Sources */,
 			);
